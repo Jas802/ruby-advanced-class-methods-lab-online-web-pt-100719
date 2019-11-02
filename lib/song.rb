@@ -41,7 +41,7 @@ def self.alphabetical
 end
 
 def self.new_from_filename(filename)
-  parts = fiename.split(" - ")
+  parts = filename.split(" - ")
   artist_name = parts[0]
   song_name = parts[1].gsub(".mp3", "")
 
@@ -57,7 +57,7 @@ def self.create_from_filename(filename)
   song_name = parts[1].gsub(".mp3", "")
 
   song = self.create
-  song.naeme = song_name
+  song.name = song_name
   song.artist_name = artist_name = artist_name
   song
 end
